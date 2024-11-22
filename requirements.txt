@@ -1,3 +1,4 @@
 streamlit
 matplotlib
 requests
+streamlit run random_quote_app.py
