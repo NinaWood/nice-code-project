@@ -13,21 +13,3 @@ st.title("Hello, Streamlit! 👋")
 st.write("This is a simple app to test Streamlit deployment.")
 # Add your code below...
 #import streamlit as st
-import pandas as pd
-import matplotlib.py plot as plt
-
-# Title
-st.title("Simple Visualization")
-
-# Create DataFrame
-data = {
-    "Category": ["A", "B", "C", "D"],
-    "Values": [10, 20, 30, 40]
-}
-df = pd.DataFrame(data)
-
-# Display Bar Chart
-st.write("Bar Chart of Categories:")
-fig, ax = plt.subplots()
-ax.bar(df["Category"], df["Values"])
-st.pyplot(fig)
