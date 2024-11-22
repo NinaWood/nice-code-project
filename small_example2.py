@@ -14,7 +14,7 @@ except ImportError:
 st.title("Hello, Streamlit! 👋")
 st.write("This is a simple app to test Streamlit deployment.")
 
-streamlit run random_quote_app.py
+
 
 import streamlit as st
 import requests
