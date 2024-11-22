@@ -12,3 +12,4 @@ except ImportError:
 st.title("Hello, Streamlit! 👋")
 st.write("This is a simple app to test Streamlit deployment.")
 # Add your code below...
+print("Whatever you want to say, genius.")
