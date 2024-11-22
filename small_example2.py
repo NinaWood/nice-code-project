@@ -1,15 +1,12 @@
-import streamlit as st
-import requests
-
-st.title("Random Quote Generator 💬")
-
 def fetch_quote():
-    response = requests.get("https://api.quotable.io/random")
-    if response.status_code == 200:
-        data = response.json()
-        return f"“{data['content']}” — {data['author']}"
-    else:
-        return "Could not fetch a quote right now. 😔"
-
-if st.button("Get a Random Quote"):
-    st.write(fetch_quote())
+    try:
+        response = requests.get("https://zenquotes.io/api/random")
+        if response.status_code == 200:
+            data = response.json()
+            quote = data[0]["q"]
+            author = data[0]["a"]
+            return f"“{quote}” — {author}"
+        else:
+            return "Failed to fetch a quote. Please try again later."
+    except Exception as e:
+        return f"An error occurred: {e}"
