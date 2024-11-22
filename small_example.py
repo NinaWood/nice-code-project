@@ -27,3 +27,17 @@ try:
 except ImportError:
     subprocess.check_call([sys.executable, "-m", "pip", "install", "matplotlib"])
     import matplotlib
+
+import streamlit as st
+import matplotlib.pyplot as plt
+
+# Sample Data
+data = [10, 20, 30, 40]
+labels = ["A", "B", "C", "D"]
+
+# Create Plot
+fig, ax = plt.subplots()
+ax.bar(labels, data)
+
+# Display Plot
+st.pyplot(fig)
