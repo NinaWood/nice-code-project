@@ -12,7 +12,7 @@ except ImportError:
 st.title("Hello, Streamlit! 👋")
 st.write("This is a simple app to test Streamlit deployment.")
 # Add your code below...
-import streamlit as st
+#import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
