@@ -7,9 +7,12 @@ try:
     import streamlit as st
 except ImportError:
     subprocess.check_call([sys.executable, "-m", "pip", "install", "streamlit"])
-    import streamlit as st
+    print("Streamlit installed. Please restart the script.")
+    sys.exit()
 
+# Streamlit app
 st.title("Hello, Streamlit! 👋")
 st.write("This is a simple app to test Streamlit deployment.")
-# Add your code below...
-print("Whatever you want to say, genius.")
+
+# Example of Streamlit logging output
+st.write("Whatever you want to say, genius.")
