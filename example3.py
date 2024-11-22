@@ -31,9 +31,10 @@ if menu == "Home":
             with col1:
                 st.write(f"- {task}")
             with col2:
-                if st.button(f"Remove", key=f"remove-{index}"):
+                # Use a button with a unique key to remove the task
+                if st.button("Remove", key=f"remove-{task}-{index}"):
                     st.session_state["tasks"].pop(index)
-                    st.experimental_rerun()
+                    st.experimental_rerun()  # Rerun the app after task removal
     else:
         st.info("No tasks yet. Add some!")
 
