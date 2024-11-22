@@ -14,7 +14,7 @@ st.write("This is a simple app to test Streamlit deployment.")
 # Add your code below...
 #import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
+import matplotlib.py plot as plt
 
 # Title
 st.title("Simple Visualization")
